@@ -1,12 +1,14 @@
 var Eventual = require('./src/view')
-var subscribe = require('./src/subscribe')
-var start = require('./src/start')
-var App = require('./src/app')
-var evs = require('./src/EVENTS')
+// var subscribe = require('./src/subscribe')
+// var start = require('./src/start')
+// var App = require('./src/app')
+// var evs = require('./src/EVENTS')
 
 
 var Box = require('3box')
 
+var { bus, view, state } = Eventual()
+Eventual.createElement(view, document.getElementById('content'))
 
 
 
